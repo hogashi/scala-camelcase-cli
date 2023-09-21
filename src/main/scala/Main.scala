@@ -1,5 +1,6 @@
-@main def hello: Unit =
-  println("Hello world!")
-  println(msg)
+import scala.io.StdIn.readLine
 
-def msg = "I was compiled by Scala 3. :)"
+@main def camelCase () = {
+  val camel = readLine().split("-").map(_.capitalize).mkString("")
+  println(camel)
+}
